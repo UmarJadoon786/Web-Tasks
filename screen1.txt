@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Task 3!</title>
+</head>
+<style>
+    body {
+        margin-left: 15px;
+        border: 2px solid white;
+    }
+
+    @font-face {
+        font-family: myFont;
+        src: url(Nexa-Heavy.ttf)
+    }
+
+    .flex {
+        display: flex
+    }
+
+    #bg-r {
+        width: 320px;
+        margin-left: 40%;
+        background-color: #8B3030;
+        border: 1px solid white;
+    }
+
+    #input {
+        width: 320px;
+        margin-left: 40%;
+        background-color: #8B3030;
+        color: white;
+        border-radius: 2px;
+        border: 1px solid white;
+        padding: 10px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 45%;
+        margin-left: 15%;
+    }
+
+    .btn {
+        width: 320px;
+        background-color: white;
+        margin-top: 4%;
+        margin-left: 40%;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: left;
+        margin-bottom: 10%;
+        font-size: 20px;
+    }
+
+    .btn:hover {
+        background-color: rgb(58, 169, 206);
+        color: white;
+        border: 2px solid white;
+    }
+
+    .btn:active {
+        background-color: white;
+        color: rgb(0, 0, 0);
+    }
+
+    .h1 {
+        font-family: myFont;
+        color: white;
+        font-size: 55px;
+    }
+
+    .p1 {
+        font-family: myFont;
+        margin-top: -4%;
+        font-style:inherit;
+    }
+
+    #border {
+        border: 3px solid #8B3030;
+        background-color: #8B3030;
+    }
+
+    #logo_png {
+        margin-top: 12px;
+        margin-bottom: 12px;
+        margin-left: 12px;
+    }
+
+    .Remove_bg {
+        width: 320px;
+        margin-left: 40%;
+        background-color: #8B3030;
+        color: aliceblue;
+    }
+
+    #h1_bg_r {
+        width: 320px;
+        margin-left: 40%;
+        background-color: #8B3030;
+    }
+
+    .cut {
+        background-color: white;
+        margin-bottom: -3px;
+        margin-left: 68.1%;
+        margin-top: -30%;
+        width: 100px;
+        padding: 100px;
+        clip-path: polygon(100% 57%, 58% 100%, 100% 100%);
+    }
+
+    ::placeholder {
+        color: rgb(230, 220, 220);
+    }
+
+    /* checkbox css */
+
+    .checkbox1 {
+        margin-left: 41%;
+        background-color: #68e09c;
+    }
+
+    .checkbox2 {
+        margin-left: 23%;
+    }
+
+    .label1 {
+        margin-left: 2px;
+        color: white;
+    }
+
+    .checkbox1,
+    .checkbox2,
+    .label1 {
+        padding-top: 10px;
+    }
+
+    .best_tour {
+        margin-left: 19%;
+    }
+
+    .best_sp {
+        margin-left: 14.6%;
+    }
+
+    .best_T {
+        margin-left: 15.5%;
+    }
+
+    .best_online {
+        margin-left: 17.5%;
+    }
+</style>
+
+<body>
+    <img src="C:\Users\user\Desktop\logo.png" alt="" width="100px" id="logo_png">
+    <div class="col-lg-12 col-md-12 col-sm-3 col-xs-12">
+        <div class=" row" id="flex">
+            <div class="col-6 " style="background-color: #8B3030" id="border">
+                <div class="S1">
+                    <div class="container">
+                        <h1 class="h1">SUBMISSION</h1>
+                        <p>All details by submission will be kept stricty private and<br> confidential by Mailman and
+                            will not
+                            be used for any purpose<br> other than judging Red Card 2018 winners</p><br>
+                        <h3 class="p1">Application will close on the <br> 15th December 2017</h3>
+                    </div>
+                </div>
+            </div sm-100% lg-100% -xxl-100%>
+            <div class="col-6 " style="background-color: #8B3030;" id="border">
+                <input type="text" class="mt-5  row col-5 " placeholder="  Name" id="input"><br>
+                <input type="text" class="mt-0  row col-5 my" placeholder="  Email Address" id="input"><br>
+                <input type="text" class="mt-0  row col-5 " placeholder="  Organization" id="input">
+                <h1 class="mt-5" id="h1_bg_r">Which Award</h1>
+                <p class="Remove_bg">(Please thick and provide detail for all of the awards you would like to be
+                    nominated
+                    for)</p>
+                <!-- <div class="full_container"> -->
+                <input type="checkbox" class="checkbox1"><label class="label1">Best live Stream</label><input
+                    type="checkbox" class="checkbox2">
+                <input type="text" class="mt-1 p-3" id="bg-r" placeholder="Description & Results (max 150 words)"><br>
+                <!-- <div class="full_container"> -->
+                <input type="checkbox" class="checkbox1"><label class="label1">Best tour champion</label><input
+                    type="checkbox" class="best_tour">
+                <input type="text" class="mt-1 p-3" id="bg-r" placeholder="Description & Results (max 150 words)"><br>
+                <!-- <div class="full_container"> -->
+                <input type="checkbox" class="checkbox1"><label class="label1">Best Sponsor Activation</label><input
+                    type="checkbox" class="best_sp">
+                <input type="text" class="mt-1 p-3" id="bg-r" placeholder="Description & Results (max 150 words)"><br>
+                <!-- <div class="full_container"> -->
+                <input type="checkbox" class="checkbox1"><label class="label1">Best Use of
+                    Technology</label><input type="checkbox" class="best_T">
+                <input type="text" class="mt-1 p-3" id="bg-r" placeholder="Description & Results (max 150 words)"><br>
+                <!-- <div class="full_container"> -->
+                <input type="checkbox" class="checkbox1"><label class="label1">Best online champion</label><input
+                    type="checkbox" class="best_online">
+                <input type="text" class="mt-1 p-3" id="bg-r" placeholder="Description & Results (max 150 words)"><br>
+                <!-- button -->
+                <button class="btn" id="btn_text"><img src="Tick img.png.png" alt="" width="30px"
+                        style="margin-right: 50px;">Submission Successfull
+                </button>
+                <div class="cut"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
